@@ -32,5 +32,5 @@
       "url": "https://ko-fi.com/krogger"
     }
   ],
-  "notes": "Boots to the title, the save select and the name-entry keyboard. Intro and title run at 60 fps; known issue: the save-select and keyboard screens draw without the game's frame pacing (hundreds of pictures a second), so animations there can run fast. Tested on Windows 11 (RTX 3070 Ti) and on a Linux mini PC (Ryzen 3 4350GE, Vega 6) with scripted inputs; nothing here says the game is playable to the end. Built with AI assistance (Claude)."
+  "notes": "Reaches the title, save select and name entry. Known problem: the game's threads hand over to each other about a million times a second, so menus run unpaced. Tested on Windows 11 by playing into the first real scene; on the Linux mini PC through the menus. Nothing here says the game is playable to the end. Built with AI assistance (Claude)."
 }

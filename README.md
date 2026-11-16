@@ -13,7 +13,7 @@ storage, controllers) is provided by the [wii-recomp runtime](https://github.com
 
 Tested with **ROLP8P** (Europe (PAL), revision 0).
 
-Boots to the title, the save select and the name-entry keyboard. Intro and title run at 60 fps; known issue: the save-select and keyboard screens draw without the game's frame pacing (hundreds of pictures a second), so animations there can run fast. Tested on Windows 11 (RTX 3070 Ti) and on a Linux mini PC (Ryzen 3 4350GE, Vega 6) with scripted inputs; nothing here says the game is playable to the end.
+Reaches the title, save select and name entry. Known problem: the game's threads hand over to each other about a million times a second, so menus run unpaced. Tested on Windows 11 by playing into the first real scene; on the Linux mini PC through the menus. Nothing here says the game is playable to the end.
 
 Only what is written here has been tested. It has not been played to the end. Other regions
 or revisions may work but are untested.
@@ -69,7 +69,7 @@ Wii Remote pointer: mouse points, Enter is A, Backspace is B.
 ## How it's made
 
 - Runtime: [https://github.com/SirWinstonChurchillTheFirst/wii-recomp](https://github.com/SirWinstonChurchillTheFirst/wii-recomp) (branch `windows-port`, tested at
-  `365a8af5ab6f`), a fork of [Zontex/wii-recomp](https://github.com/Zontex/wii-recomp) with
+  `f26aef3318ad`), a fork of [Zontex/wii-recomp](https://github.com/Zontex/wii-recomp) with
   Windows support and the fixes this game needed. GPL-3.0-or-later.
 - Hardware behaviour follows [Dolphin](https://dolphin-emu.org) where noted in the runtime's
   CREDITS.md.
