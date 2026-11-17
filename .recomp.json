@@ -32,5 +32,5 @@
       "url": "https://ko-fi.com/krogger"
     }
   ],
-  "notes": "Plays through the menus into Alpine Skiing Downhill at 60 fps, no graphics errors seen; a few hitches when an effect is first shown. All of the game's code modules run as native code. Tested on Windows 11 by playing into the first real scene; on the Linux mini PC through the menus. Nothing here says the game is playable to the end. Built with AI assistance (Claude)."
+  "notes": "Plays through the menus into Alpine Skiing Downhill at 60 fps, no graphics errors seen; a few hitches when an effect is first shown. All of the game's code modules run as native code. Tested on Windows 11 and on the Linux mini PC by playing into the first real scene (mini PC: Alpine Skiing Downhill, 55.0 fps; one picture of the screen before the event once showed a fan of colored triangles, which two later runs did not). Nothing here says the game is playable to the end. Built with AI assistance (Claude)."
 }

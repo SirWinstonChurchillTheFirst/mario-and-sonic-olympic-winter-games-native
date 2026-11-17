@@ -20,7 +20,7 @@ storage, controllers) is provided by the [wii-recomp runtime](https://github.com
 
 Tested with **ROLP8P** (Europe (PAL), revision 0).
 
-Plays through the menus into Alpine Skiing Downhill at 60 fps, no graphics errors seen; a few hitches when an effect is first shown. All of the game's code modules run as native code. Tested on Windows 11 by playing into the first real scene; on the Linux mini PC through the menus. Nothing here says the game is playable to the end.
+Plays through the menus into Alpine Skiing Downhill at 60 fps, no graphics errors seen; a few hitches when an effect is first shown. All of the game's code modules run as native code. Tested on Windows 11 and on the Linux mini PC by playing into the first real scene (mini PC: Alpine Skiing Downhill, 55.0 fps; one picture of the screen before the event once showed a fan of colored triangles, which two later runs did not). Nothing here says the game is playable to the end.
 
 Only what is written here has been tested. It has not been played to the end. Other regions
 or revisions may work but are untested.
@@ -76,7 +76,7 @@ Wii Remote pointer: mouse points, Enter is A, Backspace is B.
 ## How it's made
 
 - Runtime: [https://github.com/SirWinstonChurchillTheFirst/wii-recomp](https://github.com/SirWinstonChurchillTheFirst/wii-recomp) (branch `windows-port`, tested at
-  `bd252d728263`), a fork of [Zontex/wii-recomp](https://github.com/Zontex/wii-recomp) with
+  `25ee096b1378`), a fork of [Zontex/wii-recomp](https://github.com/Zontex/wii-recomp) with
   Windows support and the fixes this game needed. GPL-3.0-or-later.
 - Hardware behaviour follows [Dolphin](https://dolphin-emu.org) where noted in the runtime's
   CREDITS.md.
