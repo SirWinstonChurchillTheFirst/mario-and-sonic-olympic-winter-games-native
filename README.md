@@ -20,7 +20,7 @@ storage, controllers) is provided by the [wii-recomp runtime](https://github.com
 
 Tested with **ROLP8P** (Europe (PAL), revision 0).
 
-Plays through the menus into Alpine Skiing Downhill at 60 fps, no graphics errors seen; a few hitches when an effect is first shown. All of the game's code modules run as native code. Tested on Windows 11 and on the Linux mini PC by playing into the first real scene (mini PC: Alpine Skiing Downhill, 55.0 fps; one picture of the screen before the event once showed a fan of colored triangles, which two later runs did not). Nothing here says the game is playable to the end.
+Plays through the menus into Alpine Skiing Downhill at 60 fps on both machines (mini PC: 60.0 fps, no frame over 20 ms in 40 s; it was 48.6 fps before the runtime drew the run's 21,000 small shapes a frame faster). Known difference from Dolphin's picture of the same recorded frame: the skier's shadow on the snow is missing in the Downhill. All of the game's code modules run as native code. Tested on Windows 11 and on the Linux mini PC by playing into the Downhill. Nothing here says the game is playable to the end.
 
 Only what is written here has been tested. It has not been played to the end. Other regions
 or revisions may work but are untested.
@@ -36,7 +36,7 @@ The same 90-second run on both machines: started from the disc, the same scripte
 | Machine | Average fps | 1 % low fps | Busy | Frames over 20 ms |
 |---|---|---|---|---|
 | High budget: Windows 11, Intel Core i7-13700KF, NVIDIA GeForce RTX 3070 Ti, 32 GB | 59.5 | 26.2 | 98.2 % | 0.81 % |
-| Low budget: Batocera Linux mini PC (HP), AMD Ryzen 3 PRO 4350GE with Radeon Vega 6 graphics, 8 GB | 59.5 | 22.6 | 95.1 % | 1.36 % |
+| Low budget: Batocera Linux mini PC (HP), AMD Ryzen 3 PRO 4350GE with Radeon Vega 6 graphics, 8 GB | 59.6 | 33.7 | 93.2 % | 0.28 % |
 
 This game waits for the next frame by checking again and again rather than sleeping, so Busy stays near 100 % on both machines and says nothing about headroom here.
 
@@ -76,7 +76,7 @@ Wii Remote pointer: mouse points, Enter is A, Backspace is B.
 ## How it's made
 
 - Runtime: [https://github.com/SirWinstonChurchillTheFirst/wii-recomp](https://github.com/SirWinstonChurchillTheFirst/wii-recomp) (branch `windows-port`, tested at
-  `25ee096b1378`), a fork of [Zontex/wii-recomp](https://github.com/Zontex/wii-recomp) with
+  `3367ea407700`), a fork of [Zontex/wii-recomp](https://github.com/Zontex/wii-recomp) with
   Windows support and the fixes this game needed. GPL-3.0-or-later.
 - Hardware behaviour follows [Dolphin](https://dolphin-emu.org) where noted in the runtime's
   CREDITS.md.
